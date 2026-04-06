@@ -180,7 +180,9 @@
             if (this.dir === -1) ctx.scale(-1, 1);
             
             ctx.fillStyle = this.isPlayer ? 'black' : 'rgba(0,0,0,0.85)';
-           ctx.strokeStyle = this.isPlayer ? 'blue' : 'red';
+          ctx.strokeStyle = this.isPlayer ? '#00f' : '#ff0000';
+          ctx.shadowColor = this.strokeStyle;
+          ctx.shadowBlur = 10;
             ctx.lineWidth = 10; ctx.lineCap = 'round';
 
             // Head & Body
